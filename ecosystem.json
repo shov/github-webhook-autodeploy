@@ -1,0 +1,15 @@
+{
+  "apps": [
+    {
+      "name"        : "githubWebHook",
+      "script"      : "./app.js",
+      "env": {
+        "NODE_ENV": "development",
+        "KEY": "lihbovwb8345nBUyqkldm323rHUBUeifuhaxknq"
+      },
+      "env_production" : {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
