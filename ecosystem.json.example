@@ -1,0 +1,17 @@
+{
+  "apps": [
+    {
+      "name": "githubWebHook",
+      "script": "./app.js",
+      "env": {
+        "HOOK_KEY": "secreturlpart",
+        "HOOK_REF": "ref/head/test",
+        "HOOK_CWD": "../",
+        "HOOK_ACTION": "ls -la"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
