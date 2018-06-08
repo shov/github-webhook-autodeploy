@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 
 app.post('/' + (process.env.HOOK_KEY || 'test'), (req, res) => {
     try {
-        console.log(`Incoming call ☎️ [${(new Date).toISOString()}]`);
+        console.log(`Incoming call ☎️  [${(new Date).toISOString()}]`);
 
         const expectedRef = process.env.HOOK_REF || false;
 
@@ -44,6 +44,8 @@ app.post('/' + (process.env.HOOK_KEY || 'test'), (req, res) => {
                 console.log(`${stdout}`);
                 console.log(`${stderr}`);
             });
+        } else {
+            console.log(`Got unexpected ref: got[${gotRef}] != expect[${expectedRef}] 🙈`);
         }
 
     } catch (e) {
