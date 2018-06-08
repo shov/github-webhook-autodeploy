@@ -5,9 +5,9 @@
       "script": "./app.js",
       "env": {
         "HOOK_KEY": "secreturlpart",
-        "HOOK_REF": "ref/head/test",
+        "HOOK_REF": "refs/heads/master",
         "HOOK_CWD": "../",
-        "HOOK_ACTION": "ls -la"
+        "HOOK_ACTION": "git pull origin master"
       },
       "env_production": {
         "NODE_ENV": "production"
