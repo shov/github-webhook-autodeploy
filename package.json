@@ -7,8 +7,15 @@
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Alexandr Shevchenko <ls.shov@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "github",
+    "webhook",
+    "autodeploy",
+    "branch"
+  ],
+  "repository": "shov/github-webhook-autodeploy",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3"
