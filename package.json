@@ -1,6 +1,6 @@
 {
   "name": "github-webhook-autodeploy",
-  "version": "0.0.5",
+  "version": "0.0.52",
   "description": "Auto deploy from specified branch after push 🎧",
   "main": "app.js",
   "scripts": {
