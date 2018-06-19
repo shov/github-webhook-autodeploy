@@ -6,6 +6,7 @@ The simplest github webhook server to auto deploy
 If you have no node and npm, my advise is get it with [nvm](https://github.com/creationix/nvm).
 Because npm is a bit disabled with 'create project' functionality here is turn to use good old github clone.
 * `git clone https://github.com/shov/github-webhook-autodeploy.git`
+* `cd ./github-webhook-autodeploy`
 * `npm i`
 
 ## Usage
