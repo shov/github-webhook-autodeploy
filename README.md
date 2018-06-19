@@ -23,3 +23,5 @@ I've left here `ecosystem.json.example` with which easy to start using it with [
 ## Or here you go my minimalist hero:
 `HOOK_KEY="secreturlpart" HOOK_REF="refs/heads/master" HOOK_CWD="../" HOOK_ACTION="git pull origin master" PORT=6660 node ./app.js`
 
+## Hint about github.com
+<img src="https://preview.ibb.co/gs3CkJ/webhook.jpg"/>
