@@ -1,15 +1,14 @@
 {
-  "name": "githubwebhook",
-  "private": true,
-  "version": "1.0.0",
-  "description": "",
+  "name": "github-webhook-autodeploy",
+  "version": "0.0.5",
+  "description": "Auto deploy from specified branch after push 🎧",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3"

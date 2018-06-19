@@ -1,7 +1,7 @@
 {
   "apps": [
     {
-      "name": "githubWebHook",
+      "name": "github-webhook-autodeploy",
       "script": "./app.js",
       "env": {
         "HOOK_KEY": "secreturlpart",
