@@ -11,7 +11,7 @@ app.post('/' + (process.env.HOOK_KEY || 'test'), (req, res) => {
 
   const expectedRef = process.env.HOOK_REF || false
 
-  if (expectedRef === false) {
+  if (!expectedRef) {
     console.warn('Skip. Set expected ref value as HOOK_REF in env, for example "refs/heads/master"')
     res.send('1')
     return
@@ -19,7 +19,7 @@ app.post('/' + (process.env.HOOK_KEY || 'test'), (req, res) => {
 
   const gotRef = req.body.ref || false
 
-  if (gotRef === false) {
+  if (!gotRef) {
     console.warn('Skip. No ref in github web-hook body')
     console.log('The body:')
     console.log(req.body)
@@ -29,7 +29,7 @@ app.post('/' + (process.env.HOOK_KEY || 'test'), (req, res) => {
 
   const shellAction = process.env.HOOK_ACTION || false
 
-  if (shellAction === false) {
+  if (!shellAction) {
     console.warn('Skip. Set hook action as HOOK_ACTION in env, for example "git pull origin master"')
     res.send('1')
     return
